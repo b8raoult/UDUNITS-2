@@ -47,6 +47,9 @@
 #include <dlfcn.h>
 #elif defined _WIN32
 #include <windows.h>
+#ifndef PATH_MAX
+#define PATH_MAX 260
+#endif
 #endif
 
 #ifndef DLL_UDUNITS2
