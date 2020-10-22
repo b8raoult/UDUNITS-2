@@ -60,7 +60,7 @@ if(MSVC)
 endif()
 
 add_library(libudunits2
-	${libudunits2_src})	
+	${libudunits2_src})
 set_target_properties(libudunits2 PROPERTIES LIBRARY_OUTPUT_NAME udunits2)
 set_target_properties(libudunits2 PROPERTIES ARCHIVE_OUTPUT_NAME udunits2)
 set_target_properties(libudunits2 PROPERTIES RUNTIME_OUTPUT_NAME udunits2)
@@ -84,8 +84,8 @@ if (CUNIT_LIBRARY)
 endif()
 
 # The documentation is in multiple texinfo(5) format files
-texi_doc(udunits2lib.texi ${CMAKE_SOURCE_DIR}/COPYRIGHT)
-    
+# texi_doc(udunits2lib.texi ${CMAKE_SOURCE_DIR}/COPYRIGHT)
+
 install(TARGETS libudunits2 EXPORT udunits2-targets
     ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
