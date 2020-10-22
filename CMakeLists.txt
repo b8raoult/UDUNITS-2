@@ -242,7 +242,7 @@ ENDIF()
 ADD_SUBDIRECTORY (prog)
 
 # The documentation is in texinfo(5) format
-texi_doc(udunits2.texi version.texi COPYRIGHT)
+# texi_doc(udunits2.texi version.texi COPYRIGHT)
 
 # Install CHANGE_LOG and COPYRIGHT
 install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/CHANGE_LOG" DESTINATION
